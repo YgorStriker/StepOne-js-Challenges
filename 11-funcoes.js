@@ -2,11 +2,18 @@
 // O nome da função deve ser rectangleOrSquare, que recebe como parâmetro dois valores: 
 // o comprimento length e a largura width.
 
-// A função deve mostrar no console a seguinte frase se for um quadrado:
+// A função deve mostrar no console a seguinte frase se for um quadrado: It's a square
 
-// It's a square
+// Ou a seguinte frase se for um retângulo: It's a rectangle
 
-// Ou a seguinte frase se for um retângulo:
-
-// It's a rectangle
-
+function rectangleOrSquare(length, width) {
+    const answer = length * width;
+    if(length == width) {
+        console.log("It's a square!");
+    } else {
+        console.log("It's a rectangle!");
+    }
+    return answer;
+}
+rectangleOrSquare(33, 19);
+rectangleOrSquare(12, 12);

@@ -12,36 +12,31 @@ findLargest(16,45) //"45 the largest number"
 findLargest(34,10) //"34 is the largest number"
 findLargest(42,42) //"42 is equal to 42"
 ------
-
 TRADUÇOES:
 
 findLargest: encontre o maior
-
 ‘num1’is the largest number: num1 é o maior número
-
 ‘num2’is the largest number: num2 é o maior número
-
 num1 is equal to num2: num 1 é igual ao num2
-
 */
-
 
 // Para testar seu código:
 // depois de declarar a função, chame ela passando os seguintes parâmetros, 
 // e deve aparecer essa resposta:
+let num1;
+let num2;
 
 function findLargest(num1, num2) {
-    if () {
-        console.log();
-    }
-    else if () {
-        console.log();
-    }
-    else {
-        console.log();
+    if (num1 > num2) {
+        console.log(num1 + " is the largest number!");
+    } else if (num1 < num2) {
+        console.log(num2 + " is the largest number!");
+    } else if (num1 == num2) {
+        console.log(num1 + " is equal to " + num2);
+    } else {
+        console.log("Insira um número válido.");
     }
 }
-
-console.log(findLargest(16, 45)); //"45 the largest number"
-console.log(findLargest(34, 10)); //"34 is the largest number"
-console.log(findLargest(42, 42)); //"42 is equal to 42"
+findLargest(16, 45);
+findLargest(34, 10);
+findLargest(42, 42);
